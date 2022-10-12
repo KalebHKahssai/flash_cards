@@ -9,10 +9,11 @@ RSpec.describe Card do
     #binding.pry
   end
 
-  xit 'has a question' do
+  it 'has a question' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 
     expect(card.question).to eq("What is the capital of Alaska?")
+    # binding.pry
   end
 
   xit 'has an answer' do
