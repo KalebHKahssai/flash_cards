@@ -23,9 +23,10 @@ RSpec.describe Card do
     # binding.pry
   end
 
-  xit 'has a category' do
+  it 'has a category' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 
     expect(card.category).to eq(:Geography)
+    # binding.pry
   end
 end
