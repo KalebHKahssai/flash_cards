@@ -6,10 +6,17 @@ class Turn
   end
 
   def correct?
-    true
+    if @guess == @answer
+      return true
+    else return false
+    end
   end
 
   def feedback
-    "Correct!"
-  end  
+    if correct? == true
+      return "correct!"
+    elsif correct? == false
+    return "Incorrect."
+  end
+end
 end
