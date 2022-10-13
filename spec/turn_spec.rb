@@ -1,5 +1,7 @@
 require './lib/turn'
 require './lib/card'
+require 'pry';
+
 
 RSpec.describe Turn do
   it 'exists' do
@@ -9,14 +11,15 @@ RSpec.describe Turn do
     # binding.pry
   end
 
-  xit 'exists' do
-    turn = Turn.new("Juneau",card)
+  it 'exists' do
+    # card = 0
+    turn = Turn.new("Juneau","card")
 
     expect(turn).to be_instance_of(Turn)
     #binding.pry
   end
 
-  xit 'exists' do
+  it 'exists' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     turn = Turn.new("Juneau",card)
 
@@ -25,7 +28,7 @@ RSpec.describe Turn do
   end
 
 
-  xit 'exists' do
+  it 'has a guess' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     turn = Turn.new("Juneau",card)
 
@@ -33,7 +36,7 @@ RSpec.describe Turn do
     # binding.pry
   end
 
-  xit 'exists' do
+  it 'has a correct' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     turn = Turn.new("Juneau",card)
 
@@ -41,11 +44,11 @@ RSpec.describe Turn do
     # binding.pry
   end
 
-  xit 'exists' do
+  it 'has a feedback' do
     card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     turn = Turn.new("Juneau",card)
 
     expect(turn.feedback).to eq("Correct!")
     # binding.pry
   end
-end  
+end
