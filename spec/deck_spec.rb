@@ -10,7 +10,7 @@ RSpec.describe Deck do
     # binding.pry
   end
 
-  xit 'can make deck' do
+  it 'can make deck' do
     card_1 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     card_2 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     card_3 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
