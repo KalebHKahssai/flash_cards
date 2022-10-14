@@ -43,7 +43,7 @@ RSpec.describe Deck do
     # binding.pry
   end
 
-  xit 'cards in category STEM' do
+  it 'cards in category STEM' do
     card_1 = Card.new("What is the capital of Alaska?", "Juneau", :STEM)
     card_2 = Card.new("What is the capital of Alaska?", "Juneau", :STEM)
     card_3 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
